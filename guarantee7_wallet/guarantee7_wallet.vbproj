@@ -1,0 +1,132 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>guarantee7_wallet</RootNamespace>
+    <StartupObject>guarantee7_wallet.wallet</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn />
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn />
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wv - 복사본\**" />
+    <EmbeddedResource Remove="wv - 복사본\**" />
+    <None Remove="wv - 복사본\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="wv\exchange\css\default.css" />
+    <None Remove="wv\exchange\js\exchange.js" />
+    <None Remove="wv\exchange\js\register_events.js" />
+    <None Remove="wv\general\float_fix.js" />
+    <None Remove="wv\general\GR.js" />
+    <None Remove="wv\general\set_interval_display_board.js" />
+    <None Remove="wv\nft\css\default.css" />
+    <None Remove="wv\nft\js\check_nfa_and_creator.js" />
+    <None Remove="wv\nft\js\load_nft.js" />
+    <None Remove="wv\nft\js\register_events.js" />
+    <None Remove="wv\nft\js\select_event.js" />
+    <None Remove="wv\nft\js\submit_open_file_dialog.js" />
+    <None Remove="wv\multilevel\css\default.css" />
+    <None Remove="wv\multilevel\js\check_days_span.js" />
+    <None Remove="wv\multilevel\js\getCurrentTimeUTC.js" />
+    <None Remove="wv\multilevel\js\register_events.js" />
+    <None Remove="wv\multilevel\js\sell_orders.js" />
+    <None Remove="wv\multilevel\js\submit_buy.js" />
+    <None Remove="wv\multilevel\js\submit_buy_refund.js" />
+    <None Remove="wv\multilevel\js\submit_buy_refund_old.js" />
+    <None Remove="wv\multilevel\js\submit_confirm.js" />
+    <None Remove="wv\multilevel\js\submit_multilevel.js" />
+    <None Remove="wv\multilevel\js\submit_recall.js" />
+    <None Remove="wv\multilevel\js\submit_refund.js" />
+    <None Remove="wv\multilevel\js\whether_key_file_generate.js" />
+    <None Remove="wv\transfer\css\default.css" />
+    <None Remove="wv\transfer\js\register_events.js" />
+    <None Remove="wv\smart_contract\css\default.css" />
+    <None Remove="wv\transfer\js\transfer.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wv\exchange\css\default.css" />
+    <Content Include="wv\exchange\js\exchange.js" />
+    <Content Include="wv\exchange\js\register_events.js" />
+    <Content Include="wv\general\float_fix.js" />
+    <Content Include="wv\general\GR.js" />
+    <Content Include="wv\general\set_interval_display_board.js" />
+    <Content Include="wv\nft\css\default.css" />
+    <Content Include="wv\nft\js\register_events.js" />
+    <Content Include="wv\nft\js\load_nft.js" />
+    <Content Include="wv\nft\js\check_nfa_and_creator.js" />
+    <Content Include="wv\nft\js\select_event.js" />
+    <Content Include="wv\nft\js\submit_open_file_dialog.js" />
+    <Content Include="wv\multilevel\css\default.css" />
+    <Content Include="wv\multilevel\js\getCurrentTimeUTC.js" />
+    <Content Include="wv\multilevel\js\check_days_span.js" />
+    <Content Include="wv\multilevel\js\submit_buy.js" />
+    <Content Include="wv\multilevel\js\submit_multilevel.js" />
+    <Content Include="wv\multilevel\js\submit_confirm.js" />
+    <Content Include="wv\multilevel\js\submit_recall.js" />
+    <Content Include="wv\multilevel\js\submit_refund.js" />
+    <Content Include="wv\multilevel\js\submit_buy_refund_old.js" />
+    <Content Include="wv\multilevel\js\submit_buy_refund.js" />
+    <Content Include="wv\multilevel\js\register_events.js" />
+    <Content Include="wv\multilevel\js\sell_orders.js" />
+    <Content Include="wv\multilevel\js\whether_key_file_generate.js" />
+    <Content Include="wv\transfer\css\default.css" />
+    <Content Include="wv\transfer\js\transfer.js" />
+    <Content Include="wv\transfer\js\register_events.js" />
+    <Content Include="wv\smart_contract\css\default.css" />
+    <Content Include="wv\smart_contract\js\register_events.js" />
+    <Content Include="wv\smart_contract\js\load.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="MySqlConnector" />
+    <Import Include="Nethereum.Web3" />
+    <Import Include="Nethereum.Web3.Accounts" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.992.28" />
+    <PackageReference Include="MySqlConnector" Version="1.3.13" />
+    <PackageReference Include="Nethereum.Web3" Version="3.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GRT\GRT.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

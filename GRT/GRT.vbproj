@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADE82529-10C8-421D-ABB3-7C8450B5FFED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GRT</RootNamespace>
+    <AssemblyName>GRT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GRT.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GRT.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.2.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\guarantee7\packages\BouncyCastle.1.8.2\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Json.Net, Version=1.0.33.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Json.Net.1.0.33\lib\netstandard2.0\Json.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.961.33, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Microsoft.Web.WebView2.1.0.961.33\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.961.33, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Microsoft.Web.WebView2.1.0.961.33\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.961.33, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Microsoft.Web.WebView2.1.0.961.33\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\MySqlConnector.1.3.11\lib\net471\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.ABI, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.ABI.3.8.0\lib\net451\Nethereum.ABI.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Accounts, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.Accounts.3.8.0\lib\net451\Nethereum.Accounts.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.BlockchainProcessing, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.BlockchainProcessing.3.8.0\lib\net451\Nethereum.BlockchainProcessing.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Contracts, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.Contracts.3.8.0\lib\net451\Nethereum.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Geth, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.Geth.3.8.0\lib\net451\Nethereum.Geth.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Hex, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.Hex.3.8.0\lib\net451\Nethereum.Hex.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.Client, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.JsonRpc.Client.3.8.0\lib\net451\Nethereum.JsonRpc.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.IpcClient, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.JsonRpc.IpcClient.3.8.0\lib\net461\Nethereum.JsonRpc.IpcClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.RpcClient, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.JsonRpc.RpcClient.3.8.0\lib\net451\Nethereum.JsonRpc.RpcClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.KeyStore, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.KeyStore.3.8.0\lib\net451\Nethereum.KeyStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Model, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.Model.3.8.0\lib\net451\Nethereum.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.RLP, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.RLP.3.8.0\lib\net451\Nethereum.RLP.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.RPC, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.RPC.3.8.0\lib\net451\Nethereum.RPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Signer, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.Signer.3.8.0\lib\net451\Nethereum.Signer.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Util, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.Util.3.8.0\lib\net451\Nethereum.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Web3, Version=3.8.0.0, Culture=neutral, PublicKeyToken=8768a594786aba4e, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Nethereum.Web3.3.8.0\lib\net451\Nethereum.Web3.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.IO.Pipes, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\System.IO.Pipes.4.3.0\lib\net46\System.IO.Pipes.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\System.Memory.4.5.0\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="xunit.assert, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\guarantee7\packages\xunit.assert.2.4.1\lib\netstandard1.1\xunit.assert.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MySqlConnector" />
+    <Import Include="Nethereum.Geth" />
+    <Import Include="Nethereum.Web3" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.IO" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Net" />
+    <Import Include="System.Net.Sockets" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="agent\agent_record.vb" />
+    <Compile Include="agent\agent_record_old.vb" />
+    <Compile Include="balance\get_nft_balance_from_local_server.vb" />
+    <Compile Include="bc\caseOpen.vb" />
+    <Compile Include="bc\Net.vb" />
+    <Compile Include="check\checkOpen.vb" />
+    <Compile Include="balance\get_guarantee_balance_from_local_server.vb" />
+    <Compile Include="ethereum\generate_new_ethereum_account.vb" />
+    <Compile Include="ethereum\geth.vb" />
+    <Compile Include="ethereum\ethereum_miner.vb" />
+    <Compile Include="ethereum\restore_ethereum_public_key.vb" />
+    <Compile Include="ethereum\transfer\check_filterChanges.vb" />
+    <Compile Include="ethereum\transfer\check_filterChanges_test.vb" />
+    <Compile Include="ethereum\transfer\check_offline_transaction_data.vb" />
+    <Compile Include="ethereum\transfer\request_nonce_via_socket.vb" />
+    <Compile Include="ethereum\transfer\pending_filter_management.vb" />
+    <Compile Include="ethereum\transfer\transfer_ethereum.vb" />
+    <Compile Include="ethereum\transfer\transfer_ethereum_sub_check_filter_changes.vb" />
+    <Compile Include="ethereum\transfer\transfer_ethereum_makepending_so_long_data.vb" />
+    <Compile Include="ethereum\transfer\transfer_ethereum_sub_check_result_old_bak.vb" />
+    <Compile Include="ethereum\transfer\transfer_ethereum_sub_check_result.vb" />
+    <Compile Include="ethereum\transfer\transfer_ethereum_sub_send.vb" />
+    <Compile Include="ethereum\transfer\nonce_management.vb" />
+    <Compile Include="ethereum\transfer_ethereum_old.vb" />
+    <Compile Include="event\general\membership\check_main_key_login.vb" />
+    <Compile Include="event\general\membership\execute_add_account_already.vb" />
+    <Compile Include="event\general\membership\execute_add_account_ethereum.vb" />
+    <Compile Include="event\general\membership\execute_add_account_new.vb" />
+    <Compile Include="event\general\membership\execute_add_account_guarantee.vb" />
+    <Compile Include="event\general\membership\get_info_execute_login_from_server_case.vb" />
+    <Compile Include="event\general\membership\generate_add_account_form_old.vb" />
+    <Compile Include="event\general\membership\generate_add_account_form.vb" />
+    <Compile Include="event\general\membership\generate_node_list_script.vb" />
+    <Compile Include="ethereum\transfer\nonce_check_pending.vb" />
+    <Compile Include="general\check_node_accident.vb" />
+    <Compile Include="general\get_exchange_clearing_data.vb" />
+    <Compile Include="general\nts\execute_select_nts_info.vb" />
+    <Compile Include="general\execute_select_representative.vb" />
+    <Compile Include="general\ftp_upload.vb" />
+    <Compile Include="general\get_ma.vb" />
+    <Compile Include="general\get_signiture_data_for_ethereum_transfer_old.vb" />
+    <Compile Include="general\nft\check_nfa_and_creator.vb" />
+    <Compile Include="general\nft\check_nft_token_id.vb" />
+    <Compile Include="general\nts\get_nts_info_for_login.vb" />
+    <Compile Include="general\get_exchange_name.vb" />
+    <Compile Include="general\get_server_login_info.vb" />
+    <Compile Include="general\set_unlock.vb" />
+    <Compile Include="general\set_lock.vb" />
+    <Compile Include="general\get_parent_hierarchy.vb" />
+    <Compile Include="general\assign_parent_ma.vb" />
+    <Compile Include="general\GetNistTime.vb" />
+    <Compile Include="general\check_duplicated_signiture_key.vb" />
+    <Compile Include="general\check_duplicated_block_hash.vb" />
+    <Compile Include="general\check_registered_eoa.vb" />
+    <Compile Include="general\check_eoa_exist.vb" />
+    <Compile Include="general\check_representative.vb" />
+    <Compile Include="general\convert_hexbiginteger_decimal_unit_ethereum.vb" />
+    <Compile Include="general\nts\execute_nts_query.vb" />
+    <Compile Include="general\execute_query.vb" />
+    <Compile Include="general\get_balance_via_socket.vb" />
+    <Compile Include="general\get_cString.vb" />
+    <Compile Include="general\get_parent_info.vb" />
+    <Compile Include="general\get_parent_server_info_max_block_number.vb" />
+    <Compile Include="general\get_server_private_key.vb" />
+    <Compile Include="general\info\get_local_server_id.vb" />
+    <Compile Include="general\assign_parent_node.vb" />
+    <Compile Include="general\byte_to_hex.vb" />
+    <Compile Include="general\check_initial_install_case.vb" />
+    <Compile Include="general\execute_insert_query_bak.vb" />
+    <Compile Include="general\get_local_block_hash.vb" />
+    <Compile Include="general\get_local_main_max_block_number.vb" />
+    <Compile Include="general\get_parent_server_info.vb" />
+    <Compile Include="general\get_process_info.vb" />
+    <Compile Include="general\info\check_node_main.vb" />
+    <Compile Include="general\info\get_node_from_eoa.vb" />
+    <Compile Include="general\info\get_node_level.vb" />
+    <Compile Include="general\info\get_server_private_key_from_file.vb" />
+    <Compile Include="general\make_json_str_bak.vb" />
+    <Compile Include="general\make_json_string.vb" />
+    <Compile Include="general\port.vb" />
+    <Compile Include="general\set_node_private_key.vb" />
+    <Compile Include="general\get_exchange_info_individual.vb" />
+    <Compile Include="general\unicode_to_utf8.vb" />
+    <Compile Include="general\webview_escape.vb" />
+    <Compile Include="GQS\clear\GQS_clear_deposit.vb" />
+    <Compile Include="GQS\exchange\GQS_submit_cancel.vb" />
+    <Compile Include="GQS\exchange\GQS_submit_exchange.vb" />
+    <Compile Include="GQS\exchange\GQS_exchange_receive.vb" />
+    <Compile Include="GQS\general\GQS_insert_account_pure_query.vb" />
+    <Compile Include="GQS\general\GQS_insert_super_account_pure_query.vb" />
+    <Compile Include="GQS\general\GQS_ethereum_transfer_cancel_treatment.vb" />
+    <Compile Include="GQS\general\set_block_number_and_get_previous_block_hash.vb" />
+    <Compile Include="GQS\install\GQS_register_server.vb" />
+    <Compile Include="GQS\multilevel\GQS_multilevel_recall.vb" />
+    <Compile Include="GQS\multilevel\GQS_multilevel_refund.vb" />
+    <Compile Include="GQS\multilevel\GQS_sub_multilevel_buy_register_old.vb" />
+    <Compile Include="GQS\multilevel\GQS_sub_multilevel_buy_register.vb" />
+    <Compile Include="GQS\multilevel\GQS_sub_multilevel_buy_distribute.vb" />
+    <Compile Include="GQS\multilevel\GQS_multilevel_sell_order.vb" />
+    <Compile Include="GQS\multilevel\GQS_multilevel_buy.vb" />
+    <Compile Include="GQS\NFT\GQS_nft_confirm.vb" />
+    <Compile Include="GQS\NFT\GQS_nft_recall.vb" />
+    <Compile Include="GQS\NFT\GQS_nft_buy.vb" />
+    <Compile Include="GQS\NFT\GQS_nft_load_order.vb" />
+    <Compile Include="GQS\NFT\GQS_nft_initial_deploy.vb" />
+    <Compile Include="GQS\smart_contract\GQS_deploy_smart_contract_escaped.vb" />
+    <Compile Include="general\get_signiture_data_for_ethereum_transfer.vb" />
+    <Compile Include="GQS\exchange\GQS_load_order.vb" />
+    <Compile Include="GQS\transfer\GQS_transfer.vb" />
+    <Compile Include="membership\join\check_mobile_authentication_number.vb" />
+    <Compile Include="membership\join\generate_eoa_account.vb" />
+    <Compile Include="membership\join\generate_temporary_super_account.vb" />
+    <Compile Include="membership\join\insert_bc_main.vb" />
+    <Compile Include="membership\keystore\decrypt_keystore_file.vb" />
+    <Compile Include="membership\keystore\generate_key_file_old.vb" />
+    <Compile Include="membership\keystore\generate_key_file.vb" />
+    <Compile Include="membership\keystore\verify_password.vb" />
+    <Compile Include="query\get_bc_main_info.vb" />
+    <Compile Include="query\get_account_info.vb" />
+    <Compile Include="query\get_nts_main_info.vb" />
+    <Compile Include="receipt\issue_receipt.vb" />
+    <Compile Include="socket\check_local_service_running.vb" />
+    <Compile Include="socket\check_process_running.vb" />
+    <Compile Include="socket\mobile_authentication\mobile_authentication.vb" />
+    <Compile Include="general\set_database_connection.vb" />
+    <Compile Include="bc\Cryption.vb" />
+    <Compile Include="general\execute_treated_query.vb" />
+    <Compile Include="general\info\get_local_database_password.vb" />
+    <Compile Include="bc\Security.vb" />
+    <Compile Include="bc\Net_old.vb" />
+    <Compile Include="bc\Coin.vb" />
+    <Compile Include="general\get_balance.vb" />
+    <Compile Include="general\get_main_table_block_hash.vb" />
+    <Compile Include="general\GR.vb" />
+    <Compile Include="general\modify_file_content.vb" />
+    <Compile Include="membership\join\insert_bc_nts_main.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="general\RunShellCommand.vb" />
+    <Compile Include="general\info\get_info_from_ini_file.vb" />
+    <Compile Include="general\set_initial_variables.vb" />
+    <Compile Include="socket\socket_client.vb" />
+    <Compile Include="socket\socket_client__bak.vb" />
+    <Compile Include="event\general\membership\execute_login.vb" />
+    <Compile Include="event\general\membership\generate_login_form.vb" />
+    <Compile Include="event\general\membership\generate_super_account_membership_form.vb" />
+    <Compile Include="syncronize\get_schema\get_schma.vb" />
+    <Compile Include="syncronize\get_schema\replicate_schema_from_p2p.vb" />
+    <Compile Include="syncronize\insert_main_row.vb" />
+    <Compile Include="syncronize\syncronize_main_p2p_sub.vb" />
+    <Compile Include="syncronize\syncronize_main_p2p_for_middle_gap.vb" />
+    <Compile Include="syncronize\syncronize_main_p2p.vb" />
+    <Compile Include="treat_query\get_treated_query_register_node.vb" />
+    <Compile Include="treat_query\get_treated_query_submit_load_nft.vb" />
+    <Compile Include="treat_query\get_treated_query_submit_buy_old.vb" />
+    <Compile Include="treat_query\get_treated_query_submit_exchange.vb" />
+    <Compile Include="treat_query\get_treated_query_submit_buy.vb" />
+    <Compile Include="treat_query\get_treated_query_main.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ethereum\transfer\check_offline_transaction_data\offline_txn.docx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="general\packages.config" />
+    <None Include="packages.config" />
+    <None Include="wv_import\jquery-ui-1.12.1.custom\package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="event\install\" />
+    <Folder Include="event\server\" />
+    <Folder Include="event\wallet\" />
+    <Folder Include="wv_import\jquery-ui-1.12.1.custom\external\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ethereum\transfer\check_offline_transaction_data\offline_txn.txt" />
+    <Content Include="wv\css\add_account_old\css.css" />
+    <Content Include="wv\css\guarantee_main.css" />
+    <Content Include="wv\css\add_account\css.css" />
+    <Content Include="wv\css\login\css.css" />
+    <Content Include="wv\html\add_account_old.html" />
+    <Content Include="wv\html\add_account.html" />
+    <Content Include="wv\html\login.html" />
+    <Content Include="wv\html\membership.html" />
+    <Content Include="wv\js\add_account\explanation.js" />
+    <Content Include="wv\js\add_account\register_events.js" />
+    <Content Include="wv\js\add_account\select_add_type.js" />
+    <Content Include="wv\js\add_account\submit_add_account.js" />
+    <Content Include="wv\js\add_account\whether_key_file_generate.js" />
+    <Content Include="wv\js\add_account_old\explanation.js" />
+    <Content Include="wv\js\add_account_old\register_events.js" />
+    <Content Include="wv\js\add_account_old\select_coin.js" />
+    <Content Include="wv\js\add_account_old\submit_add_account.js" />
+    <Content Include="wv\js\add_account_old\whether_key_file_generate.js" />
+    <Content Include="wv\js\login\explanation.js" />
+    <Content Include="wv\js\login\register_events.js" />
+    <Content Include="wv\js\login\select_coin.js" />
+    <Content Include="wv\js\login\submit_login.js" />
+    <Content Include="wv\js\membership\register_events.js" />
+    <Content Include="wv\js\membership\submit_membership_info.js" />
+    <Content Include="wv\js\membership\submit_mobile_authentication_number.js" />
+    <Content Include="wv\js\membership\whether_key_file_generate.js" />
+    <Content Include="wv_import\bootstrap\bootstrap.min.css" />
+    <Content Include="wv_import\bootstrap\bootstrap.min.js" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\AUTHORS.txt" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\images\ui-icons_444444_256x240.png" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\images\ui-icons_555555_256x240.png" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\images\ui-icons_777620_256x240.png" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\images\ui-icons_777777_256x240.png" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\index.html" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\jquery-ui.css" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\jquery-ui.js" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\jquery-ui.min.css" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\jquery-ui.min.js" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\jquery-ui.structure.css" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\jquery-ui.structure.min.css" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\jquery-ui.theme.css" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\jquery-ui.theme.min.css" />
+    <Content Include="wv_import\jquery-ui-1.12.1.custom\LICENSE.txt" />
+    <Content Include="wv_import\jquery.js" />
+    <Content Include="wv_import\my_css\lds-spinner.css" />
+    <Content Include="wv_import\my_css\style_sheet.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\guarantee7\packages\Microsoft.Web.WebView2.1.0.961.33\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\guarantee7\packages\Microsoft.Web.WebView2.1.0.961.33\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\guarantee7\packages\Microsoft.Web.WebView2.1.0.961.33\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\guarantee7\packages\Microsoft.Web.WebView2.1.0.961.33\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,29 @@
+﻿CREATE TABLE `contract` (
+  `block_number` bigint(20) NOT NULL,
+  `mca` char(40) NOT NULL,
+  `parent` char(40) NOT NULL,
+  `eoa` char(40) NOT NULL,
+  `level` int(11) NOT NULL,
+  `balance` decimal(60,30) NOT NULL,
+  `state` varchar(50) NOT NULL,
+  `tca` char(40) NOT NULL,
+  `idate` datetime NOT NULL,
+  PRIMARY KEY (`mca`,`tca`),
+  UNIQUE KEY `block_number` (`block_number`),
+  KEY `parent` (`parent`,`eoa`,`level`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `transaction` (
+  `block_number` bigint(20) NOT NULL,
+  `tca` char(40) NOT NULL,
+  `mca` char(40) NOT NULL,
+  `eoa_ethereum` char(40) NOT NULL,
+  `expiry_date` datetime NOT NULL,
+  `order_coin` varchar(50) NOT NULL,
+  `order_price` decimal(60,30) NOT NULL,
+  `guarantee_offered` decimal(60,30) NOT NULL,
+  `state` varchar(50) NOT NULL,
+  `idate` datetime NOT NULL,
+  PRIMARY KEY (`mca`),
+  UNIQUE KEY `block_number` (`block_number`),
+  KEY `mca` (`eoa_ethereum`,`expiry_date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

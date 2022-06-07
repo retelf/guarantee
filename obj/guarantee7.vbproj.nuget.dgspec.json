@@ -1,0 +1,106 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\N\\Naver MYBOX\\Visual Studio 2019\\Projects\\guarantee7\\guarantee7.vbproj": {}
+  },
+  "projects": {
+    "C:\\N\\Naver MYBOX\\Visual Studio 2019\\Projects\\GRT\\GRT.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\N\\Naver MYBOX\\Visual Studio 2019\\Projects\\GRT\\GRT.vbproj",
+        "projectName": "GRT",
+        "projectPath": "C:\\N\\Naver MYBOX\\Visual Studio 2019\\Projects\\GRT\\GRT.vbproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\N\\Naver MYBOX\\Visual Studio 2019\\Projects\\guarantee7\\guarantee7.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\N\\Naver MYBOX\\Visual Studio 2019\\Projects\\guarantee7\\guarantee7.vbproj",
+        "projectName": "guarantee7",
+        "projectPath": "C:\\N\\Naver MYBOX\\Visual Studio 2019\\Projects\\guarantee7\\guarantee7.vbproj",
+        "packagesPath": "C:\\Users\\retel\\.nuget\\packages\\",
+        "outputPath": "C:\\N\\Naver MYBOX\\Visual Studio 2019\\Projects\\guarantee7\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\retel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "C:\\N\\Naver MYBOX\\Visual Studio 2019\\Projects\\GRT\\GRT.vbproj": {
+                "projectPath": "C:\\N\\Naver MYBOX\\Visual Studio 2019\\Projects\\GRT\\GRT.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.3.12, )"
+            },
+            "Nethereum.Web3": {
+              "target": "Package",
+              "version": "[4.0.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.ServiceProcess.ServiceController": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "microsoft.web.webview2": {
+              "target": "Package",
+              "version": "[1.0.961.33, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

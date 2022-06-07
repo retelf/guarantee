@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="ethereum\ethereum\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ethereum\ethereum\geth_start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7\guarantee7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7_install\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7_install\install.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7_server\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7_server\server.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7_smart_contract\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7_smart_contract\smart_contract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7_wallet\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7_wallet\wallet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7_wallet_old\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="guarantee7_wallet_old\wallet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="test_guarantee_for_develop\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="test_guarantee_for_develop\test.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

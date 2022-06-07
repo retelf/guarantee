@@ -1,0 +1,32 @@
+﻿#div_main{
+    width:100%;
+    background-color:aqua;
+}
+
+.mobile_authentication,
+.keys {
+    display: none;
+}
+.main_div {
+    /*display:inline-grid;*/
+}
+.main_div_left {
+    background-color:aqua;
+}
+.main_div_right {
+    background-color: bisque;
+}
+
+.td_main {
+    vertical-align: top;
+}
+
+.div_subject{
+    text-align:center;
+}
+.div_button_case {
+    text-align: center;
+}
+.hidden{
+    display:none;
+}

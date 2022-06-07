@@ -1,0 +1,1 @@
+geth --networkid 1 --http --http.corsdomain '*'

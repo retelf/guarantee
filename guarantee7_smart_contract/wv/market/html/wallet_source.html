@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="nofollow" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+
+        /*style_sheet_to_be_replaced*/
+
+    </style>
+
+    <script>
+
+        //script_to_be_replaced
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="div_coin_name">coin_name</div>
+                </div>
+                <div class="col-md-3">
+                    <div id="div_eoa">eoa</div>
+                </div>
+                <div class="col-md-3">
+                    <div id="div_balance">balance</div>
+                </div>
+                <div class="col-md-3">
+                    <div id="div_sell_amount">amount you want to sell : </div>
+                    <input id="text_sell_amount" type="text" value="" /> <label for="text_sell_amount">unit</label>
+                </div>
+                <div id="div_gasPrice_outer" class="col-md-3">
+                    <label for="text_gasPrice">gasPrice:</label>
+                    <input id="text_gasPrice" type="text" />
+                    <label for="text_gasPrice"> unit : Gwei</label>
+                </div>
+                <div class="col-md-3">
+                    <div id="div_counterpart_coin_name">counterpart_coin_name : </div>
+                    <select id="select_counterpart_coin_name">
+                        <option value="default" selected>Choose the coin you want to buy below</option>
+                        <option value="guarantee">guarantee</option>
+                        <option value="ethereum">ethereum</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <div id="div_exchange_rate">exchange rate : </div>
+                    <label id="label_sell_amount_former" for="text_sell_amount">exchange_rate_phrase</label> <input id="text_exchange_rate" type="text" value="" /> <label id="label_sell_amount_latter" for="text_sell_amount">exchange_rate_phrase</label>
+                </div>
+                <div class="col-md-3 div_button_case">
+                    <br />
+                    <input id="btn_contract" type="button" value="contract">
+                    <br /><br />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

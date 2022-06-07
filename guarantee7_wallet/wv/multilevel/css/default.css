@@ -1,0 +1,86 @@
+﻿#div_main {
+    width: 100%;
+}
+
+#td_element{
+    width:30%;
+}
+
+#div_info_outer,
+#div_public_key_outer,
+#div_private_key_outer {
+    display: none;
+}
+
+#textarea_code {
+    width: 300px;
+    height: 400px;
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow-x: scroll;
+}
+
+.main_div_left {
+    background-color: aqua;
+}
+
+.main_div_right {
+    background-color: bisque;
+}
+
+.td_board_na, .td_board_domain, .td_board_ip, .td_board_port, .td_board_exchange_fee_rate {
+    display: none;
+}
+
+.div_title {
+    text-align: center;
+}
+
+.div_block_number {
+    text-align: center;
+}
+
+.div_eoa {
+    text-align: left;
+}
+
+.div_days_span, .div_exchange_rate {
+    text-align: right;
+}
+
+.td_main {
+    vertical-align: top;
+}
+
+.div_subject {
+    text-align: center;
+}
+
+.div_button_case {
+    text-align: center;
+}
+/*.hidden{
+    display:none;
+}*/
+
+.tr_board_odd_even_0 {
+    background-color: lightgray;
+}
+
+.td_board {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.td_board_days_span, .td_board_exchange_rate {
+    text-align: right;
+}
+
+#tr_title {
+    background-color: darkcyan;
+    color: white;
+}
+
+/*.tr_board_buy {
+    pointer-events: none;
+}*/

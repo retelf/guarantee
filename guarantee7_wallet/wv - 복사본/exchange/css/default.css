@@ -1,0 +1,88 @@
+﻿#div_main{
+    width:100%;
+}
+#div_gasPrice_outer {
+    display: none;
+}
+
+#textarea_code {
+    width: 300px;
+    height: 400px;
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow-x: scroll;
+}
+.mobile_authentication,
+
+.keys {
+    display: none;
+}
+.main_div {
+    /*display:inline-grid;*/
+}
+.main_div_left {
+    background-color:aqua;
+}
+.main_div_right {
+    background-color: bisque;
+}
+
+.main_div_order {
+    /*background-color:blanchedalmond;*/
+}
+
+.td_board_na, .td_board_coin_name_from, .td_board_coin_name_to, .td_board_domain, .td_board_exchange_fee_rate {
+    display: none;
+}
+
+.div_title {
+    text-align:center;
+}
+
+.div_block_number {
+    text-align: center;
+}
+
+.div_eoa {
+    text-align: left;
+}
+
+.div_amount, .div_exchange_rate {
+    text-align: right;
+}
+
+.td_main {
+    vertical-align: top;
+}
+
+.div_subject{
+    text-align:center;
+}
+.div_button_case {
+    text-align: center;
+}
+/*.hidden{
+    display:none;
+}*/
+
+.tr_board_odd_even_0{
+    background-color:lightgray;
+}
+
+.td_board {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.td_board_amount, .td_board_exchange_rate {
+    text-align: right;
+}
+
+#tr_title {
+    background-color:darkcyan;
+    color:white;
+}
+
+/*.tr_board_buy {
+    pointer-events: none;
+}*/

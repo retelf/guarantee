@@ -1,0 +1,85 @@
+현재
+
+계정 : 0xA2F744CeD28c12787C04c429B784CAA205184168
+키 : 0x4a7d1176e2f4cd7a1f7a8ab2c880d6830ab189824bfb9a770167c974afcb73bd
+pass : password
+
+과거
+
+253
+계정 : 0xac8184ebabec1b36c29e01985bf5fba34412fc09
+키 : 0xf89f0c361dbb900ce42c869df2aee77c667899af66d28d3440454d3a6e637146
+pass : password
+
+253 - test_account
+계정 : 0xA94d43920B36B942180a02AC2d1384b4D9E38E81
+키 : 0x693cadd705898ed77a91aeab611218e3d9b40fc000d78d7a8dd67e435f144342
+
+net_1 
+계정 : 0xe404a6d40b8007Cb49BCD36fcCbCF79134d27019
+키 : 0x6f54e48e15b0cee0a91d2da8ac07ac5412e4c458f77f590590c58ee88e1c811d
+
+net_2 
+계정 : 0xF2665575074849248B260a8f7aE709D46e611f30
+키 : 0x1a2e3c5926f4e17052b2d154fd4956f7e44b895b0751723e15f9f62e4c97e0cc
+
+242
+계정 : 0x323f24116847160ab0824b978c2D57d1Eb8f9571
+키 : 0x30e10d2c4ae852a9b462f076284245c42b65e468a50d65493858b58694d78063
+
+f233
+계정 : 0x35a775A9B8C4EAb01cDee0BD0EB35059469aB60a
+키 : 0x57b77e246f0ccbeba8609f9940a9658627911cb1d1693d1a37c55725e1568db2
+
+
+1. 설치(폴더 : C:\ethereum\net_0)
+2. 블록체인 초기화(최초블록 생성) 
+	geth --rpc --rpcport "36923" --datadir "C:\ethereum\net_0\chain" init C:\ethereum\net_0\genesis.json
+	geth --rpc --rpcport "36924" --datadir "C:\ethereum\net_0\chain" init C:\ethereum\net_0\genesis.json - 242
+	geth --rpc --rpcport "36923" --datadir "C:\ethereum\net_1\chain" init C:\ethereum\net_1\genesis.json - net_1
+	geth --rpc --rpcport "36923" --datadir "C:\ethereum\net_2\chain" init C:\ethereum\net_2\genesis.json - net_2
+	geth --rpc --rpcport "36923" --datadir "C:\ethereum\net_3\chain" init C:\ethereum\net_3\genesis.json - net_3
+3. 프라이빗 네트워크 생성 
+	geth --rpc --rpcport "36923" --datadir "C:\ethereum\net_0\chain" --networkid "49891" --nodiscover --port "42193"
+	geth --rpc --rpcport "36924" --datadir "C:\ethereum\net_0\chain" --networkid "49891" --nodiscover --port "42194" - 242
+	geth --rpc --rpcport "36923" --datadir "C:\ethereum\net_1\chain" --networkid "49000" --nodiscover --port "42000" - net_1
+	geth --rpc --rpcport "36923" --datadir "C:\ethereum\net_2\chain" --networkid "49000" --nodiscover --port "42001" - net_2
+	geth --rpc --rpcport "36923" --datadir "C:\ethereum\net_3\chain" --networkid "49891" --nodiscover --port "42193" - net_3
+
+geth --rpc --rpcport "36923" --datadir "C:\ethereum\net_0\chain" --networkid "49891" --nodiscover --port "42193" --allow-insecure-unlock --unlock 0xB67A1C10503B2d554f381f04382060361303fEb1 --password "C:\ethereum\net_3\password\pass.txt"
+geth --rpc --rpcport "36923" --datadir "C:\ethereum\net_0\chain" --networkid "49891" --nodiscover --port "42193" --unlock 0x9c4f7da82f88c1818dff29010bd48acff95db825 --password "C:\ethereum\net_0\password\pass.txt"
+
+geth --rpc --rpcport "36923" --datadir "C:\ethereum\net_3\chain" --networkid "49891" --nodiscover --port "42193" --unlock 0xCb08060d2cb75120Dde7caC61acEf6Eeb54E699e --password "C:\ethereum\net_3\password\pass.txt"
+
+4. ipc 에 접속  
+cd C:\N\Naver MYBOX\Visual Studio 2019\Projects\guarantee7\ethereum\ethereum\bin\Debug\geth
+geth attach ipc:\\.\pipe\geth.ipc
+5. 계정생성 personal.newAccount("#cyndi$36%")
+6. 코인베이스 계정변경 : miner.setEtherbase(eth.accounts[1])
+7. admin.addPeer("enode://8b5291dd30f06b941fb791797eb42929f9c1e1cab9d1dab015202c06260eb909fc310982e91af89f9571a304b7b39677d0ec37d9b288cafc04ed3a01fcd09c78@[192.168.0.242]:42193?discport=0")
+스웨덴 아마존서버
+admin.addPeer("enode://573295b2652117992aaf64f555405bc77de62567d880c708ec350e785f6b35b0a8d4cff4df43539811bb05822077d7c0c842a9870833f5aac4590c367095eb3b@13.48.101.134:30303")
+
+8. 친구찾기 admin.peers
+9. 어드민정보 : admin.nodeInfo.enode
+10. 송금 eth.sendTransaction({from: 0xe58a43B5b46b91184467FD2e5b594B4441682126, to: 0x099659798d5e35f5502fcbef2d7c53731b94f765, value: web3.toWei(5, "ether")})
+
+계정 만들기 : personal.newAccount("password")
+계정 확인하기 : eth.accounts
+코인베이스 계정 확인 : eth.coinbase
+코인베이스 변경 : miner.setEtherbase(eth.accounts[0])
+잔액확인 
+web3.fromWei(eth.getBalance(eth.accounts[0]), "ether")
+web3.fromWei("0xe58a43B5b46b91184467FD2e5b594B4441682126", "ether")
+genesis 블록 내용 확인 : eth.getBlock(0)
+마이닝시작 : miner.start(2)
+마이닝 상태확인 : eth.mining
+마이닝 중지 : miner.stop()
+동기화상태 확인 : eth.syncing
+
+web3.fromWei(eth.getBalance("0x53b8af217839195f3f9d5ae9de66b7ca66b71d1e"), "ether")
+
+admin.nodeInfo.enode
+"enode://99d013b274742d30a8e5e3a84878b9243edad298efa389410cf23947e23d540acdafac73bad70df9ea578db30381f529e3924291f81843980e0d74ba58e3ca73@[::]:42193?discport=0"
+
+"enode://6ab811a26e11c9040455f55acdcfc2199101d8bfd3d4fe19adabcdf22d844a8c6f525b45d55ac527320473e88099e75dc46c4b02efbb5653367ab1155172a1ac@[::]:42194?discport=0"

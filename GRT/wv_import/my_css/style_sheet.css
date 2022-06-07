@@ -1,0 +1,2549 @@
+body 
+{
+    margin: 0px 0px 0px 0px; 
+    font-size:9pt;
+}
+
+table{
+ border-collapse:collapse; 
+}
+
+.table_login td {
+    text-align:center;
+    padding:10px;
+}
+
+.table_login div {
+    text-align:center;
+}
+
+.table_login input {
+    width:130px;
+}
+
+
+.div_label_login_id, .div_label_login_password{
+    font-family:'Malgun Gothic';
+    font-size:20pt;
+}
+
+.table_membership_execute_cancel td {
+    text-align:center;
+    padding:10px;
+}
+
+.div_membership_form .padding_div_membership_form{
+    padding:2px;
+}
+
+.div_membership_form > div:first-child{
+    border-top:solid;
+    border-top-width:2px;
+}
+
+.div_membership_form > div{
+    border-bottom:solid;
+    border-bottom-width:2px;
+}
+
+.div_membership_form .subject{
+    font-family:'Malgun Gothic';
+    font-size:12pt;
+}
+
+.div_membership_form .sub_subject{
+    font-family:'Malgun Gothic';
+    font-size:12pt;
+}
+
+#div_branch_court_name_select_explanation{
+    text-align:center;
+}
+
+#select_membership_court{
+    height:30px;
+}
+
+#optgroup_select_membership_court{    
+    font-size:20px;
+}
+
+.img_autosize {
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.image_month_button{
+    border: 1px solid white;
+}
+
+.td_intro_naration_text_subject{
+    text-align:center;
+}
+.td_intro_naration_text_content{
+    text-align:left;
+}
+
+.div_intro_naration_text_subject{
+    font-family:'Malgun Gothic';
+    font-size:medium;
+    color:#4d1909;
+}
+
+.div_intro_naration_text_content{
+    font-family:'Malgun Gothic';
+    font-size:12pt;
+    color:#4d1909;
+}
+
+.span_center_contract_conditions_subject{
+    text-align:center;
+    font-family:'Malgun Gothic';
+    font-size:20pt;
+    font-weight:bold;
+    color:#a28c8e;
+}
+
+.span_center_contract_conditions_article_main {
+    text-align: center;
+    font-family: 'Malgun Gothic';
+    font-size: 13pt;
+    font-weight: bold;
+    color: #a28c8e;
+}
+
+.div_text_general{
+    font-family:'Malgun Gothic';
+    font-size:medium;
+    color:#4d1909;
+}
+
+.inline_block {
+    display:inline-block;
+}
+
+.bg_div_intro_box_inner_top,
+.bg_div_intro_box_inner_body,
+.bg_div_intro_box_inner_bottom {
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_div_intro_box_inner_top {
+    /*background-image: url('../../resource/image/background/bg_cap.png');*/
+    background-color:rgb(90, 90, 90);
+}
+
+.bg_div_intro_box_inner_body {
+    background-image: url('../../resource/image/background/bg_body.png');
+}
+
+.bg_div_intro_box_inner_bottom {
+    /*background-color:aqua;*/
+}
+
+.top_level
+{
+}
+
+.medium_level
+{
+}
+
+.endpoint
+{
+}
+
+.button_show
+{
+    cursor:pointer;
+    }
+
+.button_shade
+{
+    cursor:help;     
+    }
+
+.hover_default
+{
+    cursor: pointer;
+    background-color: #afa;
+}
+
+.hover_only_color
+{
+    background-color: #ddd;
+}
+
+.hover_button
+{
+    cursor:pointer;
+    background-color: #dfd;
+}
+
+.hover_for_information
+{
+    cursor:help;
+    background-color: #4fa;
+    }
+    
+.hover_for_subject_click
+{
+    cursor:pointer;
+    background-color: #abc;
+    }
+    
+.hover_for_paging_numeric_button
+{
+    cursor:pointer;
+    background-color: #5c9;
+    }
+    
+.div_paging_numeric_button_selected
+{
+    font-size :large;
+    font-weight:bold
+}
+
+.div_content_basic_information_button{
+    text-align:right;
+}
+
+.div_error_message_title{
+
+    text-align:center;
+    font-size:14pt;
+    color:#a28c8e;
+}
+
+.div_error_message_content{
+
+    text-align:left;
+    font-size:11pt;
+    color:#4d1909;
+}
+
+.main_logo
+{    
+	width:50%;
+}
+
+.td_btn_upper_right
+{    
+	width:50%;
+}
+
+.txt_event_year, .txt_event_number
+{
+	width:100%;
+    height:40px;
+    font-size:14pt;
+}
+
+.txt_event_year:focus, .txt_event_number:focus
+{
+    height:80px;
+    outline:double;
+    font-size:24pt;
+}
+
+.txt_login_id, .pw_login_password
+{
+	width:100%;
+    height:30px;
+    font-size:12pt;
+}
+
+.txt_login_id:focus, .pw_login_password:focus
+{
+    height:60px;
+    outline:double;
+    font-size:20pt;
+}
+
+.txt_membership_name, .txt_membership_id, .pw_membership_password, .pw_membership_password_reconfirm, .txt_membership_email_first, .txt_membership_email_last, .txt_membership_nickname
+{
+	width:60%;
+    height:30px;
+    font-size:12pt;
+}
+
+.txt_membership_id:focus, .pw_membership_password:focus, .pw_membership_password_reconfirm:focus, .txt_membership_email_first:focus, .txt_membership_email_last:focus, .txt_membership_nickname:focus
+{
+	width:60%;
+    height:60px;
+    outline:double;
+    font-size:20pt;
+}
+
+.select_tel_number_first, .txt_tel_number_middle, .txt_tel_number_last
+{
+	width:30%;
+    height:30px;
+    font-size:12pt;
+}
+
+.select_tel_number_first:focus, .txt_tel_number_middle:focus, .txt_tel_number_last:focus
+{
+	width:30%;
+    height:60px;
+    outline:double;
+    font-size:20pt;
+}
+    
+#div_tab div
+{
+    height:30px;
+    background-color:Aqua;
+    width:100px;
+    display:inline;
+}
+
+#div_intro_main
+{
+    border-bottom-width: 1px;
+    border-bottom-color: Red;
+    border-bottom-style:solid;    
+    border-top-width: 1px;
+    border-top-color: Red;
+    border-top-style:solid;   
+}
+
+#table_search_option_fundamental
+{
+    width:100%;
+}
+
+#table_search_option_fundamental td
+{
+    text-align:left;
+    padding-left:20px;
+    font-size:8pt
+}
+
+#table_search_option_fundamental .div_district
+{
+    display:inline;
+}
+#table_search_option_fundamental .div_date_picker
+{
+    display:inline;
+    font-size:8pt;
+    border-style:solid;
+    border-width:1px;
+}
+
+#table_search_option_public_restriction
+{
+    width:100%;
+}
+
+#table_search_option_public_restriction td
+{
+    text-align:left;
+    padding-left:2px;
+    border-style: solid; 
+    border-width: thin;
+    font-size:8pt
+}
+
+#table_search_option_building
+{
+    width:100%;
+}
+
+#table_search_option_building td
+{
+    text-align:left;
+    padding-left:2px;
+    border-style: solid; 
+    border-width: thin;
+    font-size:8pt
+}
+
+#table_search_option_estate
+{
+    width:100%;
+}
+
+#table_search_option_estate td
+{
+    text-align:left;
+    padding-left:2px;
+    border-style: solid; 
+    border-width: thin;
+    font-size:8pt
+}
+
+#table_search_option_special
+{
+    width:100%;
+}
+
+#table_search_option_special td
+{
+    text-align:left;
+    padding-left:2px;
+    border-style: solid; 
+    border-width: thin;
+    font-size:8pt
+}
+
+#intro_concrete_fieldset_search_option .span_or_and_between_fieldset
+{
+    font-size:larger;
+    font-weight:bolder;
+    color:red;
+    }
+
+#intro_concrete_fieldset_search_option .span_or_and
+{
+    }
+    
+#intro_concrete_search_option_top_legend
+{
+    font-size:12pt;
+    font-weight:bold;
+}
+
+#intro_concrete_fieldset_search_option .search_option_box_sub_fieldset_name
+{
+    font-weight:bold;
+}
+
+#intro_concrete_fieldset_calendar
+{
+    /*width:700px;*/
+}
+
+ .td_calendar_date
+{
+    vertical-align:top;
+}
+ .week_number_0, 
+ .week_number_6
+{
+    width: 50px;
+}
+
+ .week_number_0 .day
+{
+    font-size:25pt;
+    color: #da5861;
+}
+
+ .week_number_6 .day
+{
+    font-size:25pt;
+    color: #07f99b;
+}
+
+ .week_number_1, 
+ .week_number_2, 
+ .week_number_3, 
+ .week_number_4, 
+ .week_number_5
+{
+    width: 100%;
+}
+
+ .week_number_1 .date_bid_section, 
+ .week_number_1 .period_bid_section, 
+ .week_number_2 .date_bid_section, 
+ .week_number_2 .period_bid_section, 
+ .week_number_3 .date_bid_section, 
+ .week_number_3 .period_bid_section,
+ .week_number_4 .date_bid_section, 
+ .week_number_4 .period_bid_section,
+ .week_number_5 .date_bid_section, 
+ .week_number_5 .period_bid_section
+{
+    border-left-style:dotted;
+    border-left-color:Orange;
+    border-left-width:1px;
+}
+
+ .week_number_5 .date_bid_section, 
+ .week_number_5 .period_bid_section
+{
+    border-right-style:dotted;
+    border-right-color:Orange;
+    border-right-width:1px;
+}
+
+ .week_number_1 .day,
+ .week_number_2 .day,
+ .week_number_3 .day,
+ .week_number_4 .day,
+ .week_number_5 .day
+{
+    font-size:35pt;
+    font-weight:bold;
+    text-align:center;
+    background-color:#fffa9f;
+}
+
+.inner_section_date_bid_court_name_and_section 
+{
+    font-size:20pt;
+    text-align:center;
+}
+
+/*īŻ�α� ���� �߰�*/
+
+ .week_number_0 .catalog_day
+{
+    font-size:25pt;
+    color: #da5861;
+}
+
+ .week_number_6 .catalog_day
+{
+    font-size:25pt;
+    color: #07f99b;
+}
+
+ .week_number_1, 
+ .week_number_2, 
+ .week_number_3, 
+ .week_number_4, 
+ .week_number_5
+{
+    width: 100%;
+}
+
+ .week_number_1 .catalog_date_bid_section, 
+ .week_number_1 .catalog_period_bid_section, 
+ .week_number_2 .catalog_date_bid_section, 
+ .week_number_2 .catalog_period_bid_section, 
+ .week_number_3 .catalog_date_bid_section, 
+ .week_number_3 .catalog_period_bid_section,
+ .week_number_4 .catalog_date_bid_section, 
+ .week_number_4 .catalog_period_bid_section,
+ .week_number_5 .catalog_date_bid_section, 
+ .week_number_5 .catalog_period_bid_section
+{
+    border-left-style:dotted;
+    border-left-color:Orange;
+    border-left-width:1px;
+}
+
+ .week_number_5 .catalog_date_bid_section, 
+ .week_number_5 .catalog_period_bid_section
+{
+    border-right-style:dotted;
+    border-right-color:Orange;
+    border-right-width:1px;
+}
+
+ .week_number_1 .catalog_day,
+ .week_number_2 .catalog_day,
+ .week_number_3 .catalog_day,
+ .week_number_4 .catalog_day,
+ .week_number_5 .catalog_day
+{
+    font-size:35pt;
+    font-weight:bold;
+    text-align:center;
+    background-color:#fffa9f;
+}
+
+ /*īŻ�α� ���� �߰�*/
+
+fieldset input[type="button"] 
+{
+    font-size:20pt;
+    text-align:center;
+}
+
+ .div_space_gap_upper_day
+{
+    height:20px;
+}
+
+ .div_space_gap_under_day
+{
+    height:10px;
+}
+
+ #table_region{
+     width:100%;
+ }
+
+
+#div_top_banner
+{
+}
+
+
+#div_left_timetable
+{
+}
+
+/*#div_left_timetable .hover_month_button
+{
+    cursor:pointer;
+    background-color:#fcc8ce;
+}*/
+
+#div_left_timetable .div_space_gap_year_to_month
+{
+    height:10px;
+}
+
+#div_left_timetable .div_space_gap_month_to_year
+{
+    height:20px;
+}
+
+#div_left_court
+{
+}
+
+#div_left_region
+{
+}
+
+#div_left_region .td_left_region_list_header
+{
+    font-size:12pt;
+    font-weight:bold;   
+    padding:5px; 
+    background-color:#da9985;
+    color:#4d1909;
+    }
+
+#div_left_region .td_left_region_list_first_district_header
+{
+    font-size:12pt;
+    color:#666666;    
+    }
+
+#div_left_region .td_left_region_list_first_district
+{
+    padding-left:5px;
+    text-align:center;
+    }
+    
+#div_left_region .td_left_region_list_second_district_header
+{
+    font-size:10pt;
+    color:#666666;  
+    }
+    
+#div_left_region .td_left_region_list_second_district
+{
+    padding-left:10px;
+    }
+    
+#div_left_region .td_left_region_list_third_district_header
+{
+    font-size:9pt;
+    font-weight:bold;
+    color:#000000;  
+    }
+    
+#div_left_region .td_left_region_list_third_district
+{
+    padding-left:15px;
+    }
+
+
+
+#div_left_region
+{
+}
+
+#div_left_region
+{
+}
+
+#div_center
+{
+    text-align:left;
+}
+
+#fieldset_center_contents 
+{
+    /*width:780px;*/
+    text-align:left;
+}
+
+#legend_center_contents
+{
+    font-size:20pt;
+    font-weight:bold;
+}
+
+#fieldset_center_contents .div_space_gap_under_legend
+{
+    height:10px;
+}
+
+#div_center_tab
+{
+    text-align:center;
+}
+
+#fieldset_center_contents .table_basic_information
+{
+    width:100%;
+    }
+    
+#div_center_one_event_address
+{
+    text-align:center;
+}
+    
+#div_center_one_event_address .table_center_one_event_rep_address
+{
+    width:100%;
+    border-top:1px solid #a28c8e;
+}
+
+#div_center_one_event_address .td_center_one_event_rep_address
+{
+    height:30px;
+    vertical-align:middle;
+}
+
+#div_center_one_event_address .div_center_one_event_rep_address
+{
+    text-align:center;
+    font-size:10pt;
+    font-weight:bold;
+    color:#a28c8e;
+}
+
+#div_court_section
+{
+}
+
+#div_basic_data
+{
+    width:100%;
+    text-align:center;
+}
+
+#table_basic_data
+{
+    width:100%;
+}
+
+#tbody_basic_data td
+{
+    border-top:1px solid #a28c8e;
+    border-bottom:1px solid #a28c8e;
+    vertical-align:middle;
+}
+
+#tbody_basic_data .div_basic_data_content_rep_address
+{
+    text-align:center;
+    font-size:10pt;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+#table_basic_data .td_basic_data_rep_address
+{
+    height:30px;
+    background-color:#a28c8e;
+}
+
+#table_basic_data  .title
+{
+    width:10%;
+    background-color:#f7eff0;
+    }
+
+#table_basic_data  .money
+{
+    text-align:right;
+    margin-right:3px;
+    }
+
+#table_basic_data  .square
+{
+    text-align:right;
+    margin-right:3px;
+    }
+
+#table_basic_data  .number_under_point
+{
+    display:inline;
+    font-size:smaller;
+    }
+
+#table_basic_data  .first_content_column
+{
+    width:20%;
+    }
+
+#table_basic_data  .second_content_column
+{
+    width:30%;
+    }
+
+#table_basic_data  .third_content_column
+{
+    width:20%;
+    }
+
+#td_photo
+{
+    width:400px;
+    text-align:left;
+    }
+    
+#div_photo
+{
+    /*margin-left:73px;
+    margin-top:20px;
+    margin-bottom:20px;*/
+}    
+    
+#td_photo img
+{
+    margin-right:30px;
+}
+
+#table_court_bid_procedure .td_court_bid_procedure_main_title,
+#table_concrete_information .td_concrete_information_main_title,
+#tbody_surroundings_etc .td_surroundings_etc_main_title,
+#tbody_tenant .td_tenant_main_title,
+#tbody_register .td_register_main_title
+{
+    height:20px;
+    background-color:#a28c8e;
+    vertical-align:middle;
+    text-align:center;
+    font-size:9pt;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+#tbody_court_bid_procedure .title,
+#tbody_concrete_information .title,
+#tbody_surroundings_etc .title,
+#tbody_tenant .title,
+#tbody_register .title
+{
+    vertical-align:middle;
+    text-align:center;
+    font-size:9pt;
+    font-weight:bold;
+    color:#a28c8e;
+    background-color:#f7eff0;
+    }
+
+#tbody_concrete_information .rows_highlight,
+#tbody_court_bid_procedure .rows_highlight,
+#tbody_tenant .rows_highlight,
+#tbody_register .rows_highlight
+{
+    background-color:#f7eff0;
+    }
+
+/* court_bid_procedure */
+
+#table_court_bid_procedure
+{
+    /*width:246px;*/
+    border-bottom:1px solid #a28c8e;
+}
+    
+
+#tbody_court_bid_procedure .td_court_bid_procedure_content_times
+{
+    width:10%;
+    text-align:center;
+    }
+
+#tbody_court_bid_procedure .td_court_bid_procedure_content_bid_date
+{
+    width:35%;
+    text-align:center;
+    }
+
+#tbody_court_bid_procedure .td_court_bid_procedure_content_lowest_price
+{
+    width:35%;
+    text-align:right;
+    }
+
+#tbody_court_bid_procedure .td_court_bid_procedure_content_result
+{
+    width:20%;
+    text-align:center;
+    }
+
+/* concrete_in_detail */
+
+#tbody_concrete_information td
+{
+    border:3px solid white;
+    }
+    
+#div_concrete_data
+{
+    text-align:center;
+}
+    
+#table_concrete_information
+{
+    width:100%;
+    border-bottom:1px solid #a28c8e;
+}
+
+#tbody_concrete_information .td_concrete_information_title_num
+{
+    width: 7%;
+    }
+
+#tbody_concrete_information .td_concrete_information_title_commodity_type
+{
+    width: 10%;
+    }
+
+#tbody_concrete_information .td_concrete_information_title_address
+{
+    width: 20%;
+    }
+
+#tbody_concrete_information .td_concrete_information_title_square_meter
+{
+    width: 13%;
+    }
+
+#tbody_concrete_information .td_concrete_information_title_price
+{
+    width: 15%;
+    }
+
+#tbody_concrete_information .td_concrete_information_title_public_restriction
+{
+    width: 25%;
+    }
+
+#tbody_concrete_information .td_concrete_information_title_etc_comment
+{
+    width: 10%;
+    }
+
+#tbody_concrete_information  .number_under_point
+{
+    display:inline;
+    font-size:smaller;
+    }
+
+/* surroundings_etc */
+
+#div_surroundings_etc
+{
+    text-align:center;
+    }
+
+#table_surroundings_etc
+{
+    width:100%;
+    border-bottom:1px solid #a28c8e;
+    }
+    
+#tbody_surroundings_etc .div_surroundings_etc_sub_content
+{
+    text-align:left;
+    }
+
+/* tenant */
+
+#div_tenant
+{
+    text-align:center;
+    }
+    
+#table_tenant
+{
+    width:100%;
+    border-bottom:1px solid #a28c8e;
+}
+
+#tbody_tenant td
+{
+    border:3px solid white;
+    }
+
+#tbody_tenant .td_tenant_title_name
+{
+    width: 20%;
+    }
+
+#tbody_tenant .td_tenant_title_seizure_space
+{
+    width: 20%;
+    }
+
+#tbody_tenant .td_tenant_title_deposit
+{
+    width: 25%;
+    }
+
+#tbody_tenant .td_tenant_title_square_date
+{
+    width: 25%;
+    }
+
+#tbody_tenant .td_tenant_title_source
+{
+    width: 10%;
+    }
+
+/* register */
+
+#div_register
+{
+    text-align:center;
+    }
+    
+#table_register
+{
+    width:100%;
+    border-bottom:1px solid #a28c8e;
+}
+
+#tbody_register td
+{
+    border:3px solid white;
+    }
+
+#tbody_register .td_register_title_num
+{
+    width: 10%;
+    }
+
+#tbody_register .td_register_title_receipt_date
+{
+    width: 15%;
+    }
+
+#tbody_register .td_register_title_credit_kind
+{
+    width: 20%;
+    }
+
+#tbody_register .td_register_title_creditor
+{
+    width: 35%;
+    }
+
+#tbody_register .td_register_title_credit_sum
+{
+    width: 20%;
+    }
+
+#tbody_register .money
+{
+    text-align:right;
+    margin-right:3px;
+    }   
+    
+
+#div_sentence
+{
+}
+
+#tbody_allotment .td_allotment_main_title,
+#tbody_tax .td_tax_main_title
+{
+    height:20px;
+    background-color:#a28c8e;
+    vertical-align:middle;
+    text-align:center;
+    font-size:9pt;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+#tbody_allotment .title,
+#tbody_tax .title
+{
+    vertical-align:middle;
+    text-align:center;
+    font-size:9pt;
+    font-weight:bold;
+    color:#a28c8e;
+    background-color:#f7eff0;
+    }
+
+#tbody_allotment .rows_highlight,
+#tbody_tax .rows_highlight
+{
+    background-color:#f7eff0;
+    }
+
+/* allotment */
+
+#div_allotment
+{
+    text-align:center;
+    }
+    
+#table_allotment
+{
+    width:100%;
+    border-bottom:1px solid #a28c8e;
+}
+
+#tbody_allotment td
+{
+    border:5px solid white;
+    }
+
+#tbody_allotment .td_allotment_title_num
+{
+    width: 5%;
+    }
+
+#tbody_allotment .td_allotment_title_credit_kind
+{
+    width: 10%;
+    }
+
+#tbody_allotment .td_allotment_title_creditor
+{
+    width: 20%;
+    }
+
+#tbody_allotment .td_allotment_title_credit_sum
+{
+    width: 20%;
+    }
+
+#tbody_allotment .td_allotment_title_allot_sum_executed
+{
+    width: 15%;
+    }
+
+#tbody_allotment .td_allotment_title_loss_sum
+{
+    width: 15%;
+    }
+
+#tbody_allotment .td_allotment_title_erase_pole
+{
+    width: 5%;
+    }
+
+#tbody_allotment .td_allotment_title_erase_pole_resistent
+{
+    width: 5%;
+    }
+
+#tbody_allotment .money
+{
+    text-align:right;
+    margin-right:3px;
+    }       
+
+/* tax */
+
+#div_tax
+{
+    text-align:center;
+    }
+    
+#table_tax
+{
+    width:100%;
+    border-bottom:1px solid #a28c8e;
+}
+
+#tbody_tax td
+{
+    border:5px solid white;
+    }
+
+#tbody_tax .td_tax_title_num
+{
+    width: 10%;
+    }
+
+#tbody_tax .td_tax_title_tax_acquisition
+{
+    width: 10%;
+    }
+
+#tbody_tax .td_tax_title_tax_farm
+{
+    width: 10%;
+    }
+
+#tbody_tax .td_tax_title_tax_register
+{
+    width: 10%;
+    }
+
+#tbody_tax .td_tax_title_tax_education
+{
+    width: 10%;
+    }
+
+#tbody_tax .td_tax_title_tax_national_house
+{
+    width: 10%;
+    }
+
+#tbody_tax .td_tax_title_tax_jeungji
+{
+    width: 10%;
+    }
+
+#tbody_tax .td_tax_title_tax_inji
+{
+    width: 10%;
+    }
+
+#tbody_tax .td_tax_title_total_tax
+{
+    width: 20%;
+    }
+
+#tbody_tax .money
+{
+    text-align:right;
+    margin-right:3px;
+    }   
+    
+/* photo */
+
+#table_file_photo
+{
+    border-top:1px solid #a28c8e;
+    width:100%;
+    }
+    
+#tbody_file_photo .div_right_list_explanation
+{
+    background-color:#a28c8e;
+    text-align:center;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+#td_file_photo_right_middle_image_list
+{
+    /*background-color:red;*/
+    vertical-align:top;
+    }
+
+#div_file_photo_right_middle_image_list_outer
+{
+    text-align:center;
+    position:relative;
+    height:600px;
+    overflow:auto;
+    }
+    
+#td_file_photo_big_image_content
+{
+    /*background-color:blue;*/
+    border-right:1px solid #a28c8e;
+    text-align:center;
+    vertical-align:top;
+    width:80%;
+    }
+    
+#td_file_photo_big_image_content .div_big_image_content_explanation
+{
+    width:100%;
+    position:relative;
+    overflow:hidden;
+}
+    
+#td_file_photo_big_image_content .table_big_image_explanation_inner
+{
+    width:100%;
+}
+    
+#td_file_photo_big_image_content .td_big_image_explanation_inner
+{
+    height:30px;
+    vertical-align:middle;
+    text-align:center;
+    font-size:11pt;
+    font-weight:bold;
+    color:#a28c8e;
+}
+
+#td_file_photo_big_image_content .div_big_image_explanation_inner
+{
+    width:100%;
+    position:relative;
+}
+    
+#td_file_photo_big_image_content .div_big_image_content_content
+{
+    width:100%;
+    position:relative;
+    overflow:hidden;
+}
+
+#td_file_photo_big_image_content .div_big_image_content_inner
+{
+    width:100%;
+    position:relative;
+}
+    
+/* appraisal */
+
+#table_file_appraisal
+{
+    width:100%;
+}
+
+#td_file_appraisal_upper_tab
+{
+    vertical-align:middle;
+    text-align:center;
+}
+
+#div_file_appraisal_upper_tab_outer
+{
+    position:relative;
+}
+
+#td_file_appraisal_content
+{
+}
+
+#div_file_appraisal_upper_tab_outer
+{
+    width:100%;
+}
+
+#div_file_appraisal_content
+{
+}
+
+#iframe_file_appraisal_content
+{
+    width:100%;
+}
+
+.div_file_appraisal_upper_tab_inner
+{
+    display:inline;    
+}
+    
+/* register */
+
+#table_file_register
+{
+    width:100%;
+}
+
+#td_file_register_upper_tab
+{
+    vertical-align:middle;
+    text-align:center;
+}
+
+#div_file_register_upper_tab_outer
+{
+    position:relative;
+}
+
+#td_file_register_content
+{
+}
+
+#div_file_register_upper_tab_outer
+{
+    width:100%;
+}
+
+#div_file_register_content
+{
+}
+
+#iframe_file_register_content
+{
+    width:100%;
+}
+
+.div_file_register_upper_tab_inner
+{
+    display:inline;    
+}
+    
+/* map */
+
+#div_map
+{
+    text-align:center;
+}
+
+
+
+#div_board
+{
+}
+
+
+
+#div_chat
+{
+}
+
+/* list */
+
+#div_right_board .last_visited_tr_event_box_object
+{
+    background-color: #eee;
+}
+
+#div_right_board .present_visitting_tr_event_box_object
+{
+    background-color: #e8e;
+}
+
+#table_write_button
+{
+    width: 100%;
+}
+
+#table_write_button .td_write_button
+{
+    width: 50%;
+    height:30px;
+    vertical-align:middle;
+}
+
+#table_write_button .div_write_button_1
+{
+    width:100%;
+    text-align:left;
+}
+
+#table_write_button .div_write_button_2
+{
+    width:100%;
+    text-align:right;
+}
+
+/* view - main */
+
+#td_header_tbody_main_num
+{
+    width:10%;
+}
+
+#td_header_tbody_main_nick_name
+{
+    width:40%;
+}
+
+#td_header_tbody_main_date_written
+{
+    width:25%;
+}
+
+#td_header_tbody_main_visited
+{
+    width:25%;
+}
+
+#tr_title_tbody_main
+{
+    height:50px;
+    vertical-align:middle;
+    background-color:#ecedea;
+}
+
+#tr_title_tbody_main div
+{
+    width:100%;
+    text-align:center;
+}
+
+#td_list_board_inform_num
+{
+    text-align:center;
+}
+
+#td_list_board_inform_nick_name
+{
+    text-align:center;
+    font-size:1.1em;
+}
+
+#td_list_board_inform_user_subject
+{
+    text-align:left;
+}
+
+#td_list_board_inform_date_written
+{
+    text-align:center;
+}
+
+#td_list_board_inform_visited
+{
+    text-align:right;
+}
+
+#tr_content_tbody_main_subject td
+{
+    vertical-align:middle;
+    font-size:1.3em;
+    font-family:'Malgun Gothic';
+    font-weight:bold;
+    color:#888888;
+    padding:20px 30px 20px 30px;
+}
+
+#tr_content_tbody_main_content td
+{
+    height:150px;
+    overflow:visible;
+    vertical-align:top;
+    padding:0px 30px 20px 30px;
+}
+
+#tr_button_tbody_main td
+{
+    height:20px;
+    vertical-align:middle;
+    background-color:#ecedea;
+    text-align:right;
+    padding:5px 0px 5px 30px;
+}
+
+#tr_button_tbody_main div
+{
+    margin:0px 10px 0px 0px;
+}
+
+/* view - sub */
+
+#div_board_table_body_view_main_article{
+    font-size: 11pt;
+}
+
+/* reply */
+
+/* write */
+
+/* modify */
+
+/* delete */
+    
+
+/* list */
+
+#div_list_churchboard
+{
+    display: inline;
+    font-size: 11pt;
+    font-weight:bold;
+}
+
+#table_churchboard_list
+{
+    width:100%;
+}
+
+#table_churchboard_list th
+{
+    height:30px;
+    vertical-align:middle;
+    background-color:#ecedea;
+}
+
+#table_churchboard_list td
+{
+    height:20px;
+    vertical-align:middle;
+}
+
+#th_list_churchboard_num
+{
+    width:10%;
+}
+
+#th_list_churchboard_nick_name
+{
+    width:15%;
+}
+
+#th_list_churchboard_user_subject
+{
+    width:50%;
+}
+
+#th_list_churchboard_date_written
+{
+    width:15%;
+}
+
+#th_list_churchboard_visited
+{
+    width:10%;
+}
+
+#td_list_churchboard_num
+{
+    text-align:center;
+}
+
+#td_list_churchboard_nick_name
+{
+    text-align:center;
+    font-size:1.1em;
+}
+
+#td_list_churchboard_user_subject
+{
+    text-align:left;
+}
+
+#td_list_churchboard_date_written
+{
+    text-align:center;
+}
+
+#td_list_churchboard_visited
+{
+    text-align:right;
+}
+
+#tbody_churchboard_paging .td_paging_numeric_button
+{
+    text-align:center;
+    height:30px;
+    vertical-align:middle;
+    background-color:#ecedea;
+}
+
+/* view - main */
+
+#table_churchboard_view
+{
+    width:100%;
+}
+
+/* view - sub */
+
+#table_churchboard_view .tr_content_tbody_sub_subject td
+{
+    vertical-align:middle;
+    font-size:1.2em;
+    font-family:'Malgun Gothic';
+    font-weight:bold;
+    color:#888888;
+    padding:15px 30px 15px 30px;
+}
+
+#table_churchboard_view .tr_title_tbody_sub td
+{
+    width:100%;
+    padding:0px 30px 0px 30px;
+}
+
+#table_churchboard_view .tr_title_tbody_sub div
+{
+    margin:0px 20px 0px 0px;
+}
+
+#table_churchboard_view .tr_content_tbody_sub_content td
+{
+    overflow:visible;
+    vertical-align:top;
+    padding:20px 30px 20px 30px;
+}
+
+#table_churchboard_view .tr_button_tbody_sub td
+{
+    height:20px;
+    vertical-align:middle;
+    background-color:#ecedea;
+    text-align:left;
+    padding:5px 20px 5px 20px;
+}
+
+#table_churchboard_view .tr_button_tbody_sub div
+{
+    margin:0px 0px 0px 10px;
+}
+
+/* reply */
+
+/* write */
+
+/* modify */
+
+/* delete */
+    
+
+/* list */
+
+#div_list_freeboard
+{
+    display: inline;
+    font-size: 11pt;
+    font-weight:bold;
+}
+
+#table_freeboard_list
+{
+    width:100%;
+}
+
+#table_freeboard_list th
+{
+    height:30px;
+    vertical-align:middle;
+    background-color:#ecedea;
+}
+
+#table_freeboard_list td
+{
+    height:20px;
+    vertical-align:middle;
+}
+
+#th_list_freeboard_num
+{
+    width:10%;
+}
+
+#th_list_freeboard_nick_name
+{
+    width:15%;
+}
+
+#th_list_freeboard_user_subject
+{
+    width:50%;
+}
+
+#th_list_freeboard_date_written
+{
+    width:15%;
+}
+
+#th_list_freeboard_visited
+{
+    width:10%;
+}
+
+#td_list_freeboard_num
+{
+    text-align:center;
+}
+
+#td_list_freeboard_nick_name
+{
+    text-align:center;
+    font-size:1.1em;
+}
+
+#td_list_freeboard_user_subject
+{
+    text-align:left;
+}
+
+#td_list_freeboard_date_written
+{
+    text-align:center;
+}
+
+#td_list_freeboard_visited
+{
+    text-align:right;
+}
+
+#tbody_freeboard_paging .td_paging_numeric_button
+{
+    text-align:center;
+    height:30px;
+    vertical-align:middle;
+    background-color:#ecedea;
+}
+
+/* view - main */
+
+#table_freeboard_view
+{
+    width:100%;
+}
+
+/* view - sub */
+
+#table_freeboard_view .tr_content_tbody_sub_subject td
+{
+    vertical-align:middle;
+    font-size:1.2em;
+    font-family:'Malgun Gothic';
+    font-weight:bold;
+    color:#888888;
+    padding:15px 30px 15px 30px;
+}
+
+#table_freeboard_view .tr_title_tbody_sub td
+{
+    width:100%;
+    padding:0px 30px 0px 30px;
+}
+
+#table_freeboard_view .tr_title_tbody_sub div
+{
+    margin:0px 20px 0px 0px;
+}
+
+#table_freeboard_view .tr_content_tbody_sub_content td
+{
+    overflow:visible;
+    vertical-align:top;
+    padding:20px 30px 20px 30px;
+}
+
+#table_freeboard_view .tr_button_tbody_sub td
+{
+    height:20px;
+    vertical-align:middle;
+    background-color:#ecedea;
+    text-align:left;
+    padding:5px 20px 5px 20px;
+}
+
+#table_freeboard_view .tr_button_tbody_sub div
+{
+    margin:0px 0px 0px 10px;
+}
+
+/* reply */
+
+/* write */
+
+/* modify */
+
+/* delete */
+    
+
+/* list */
+
+#div_list_gethomeboard
+{
+    display: inline;
+    font-size: 11pt;
+    font-weight:bold;
+}
+
+#table_gethomeboard_list
+{
+    width:100%;
+}
+
+#table_gethomeboard_list th
+{
+    height:30px;
+    vertical-align:middle;
+    background-color:#ecedea;
+}
+
+#table_gethomeboard_list td
+{
+    height:20px;
+    vertical-align:middle;
+}
+
+#th_list_gethomeboard_num
+{
+    width:10%;
+}
+
+#th_list_gethomeboard_nick_name
+{
+    width:15%;
+}
+
+#th_list_gethomeboard_user_subject
+{
+    width:50%;
+}
+
+#th_list_gethomeboard_date_written
+{
+    width:15%;
+}
+
+#th_list_gethomeboard_visited
+{
+    width:10%;
+}
+
+#td_list_gethomeboard_num
+{
+    text-align:center;
+}
+
+#td_list_gethomeboard_nick_name
+{
+    text-align:center;
+    font-size:1.1em;
+}
+
+#td_list_gethomeboard_user_subject
+{
+    text-align:left;
+}
+
+#td_list_gethomeboard_date_written
+{
+    text-align:center;
+}
+
+#td_list_gethomeboard_visited
+{
+    text-align:right;
+}
+
+#tbody_gethomeboard_paging .td_paging_numeric_button
+{
+    text-align:center;
+    height:30px;
+    vertical-align:middle;
+    background-color:#ecedea;
+}
+
+/* view - main */
+
+#table_gethomeboard_view
+{
+    width:100%;
+}
+
+/* view - sub */
+
+#table_gethomeboard_view .tr_content_tbody_sub_subject td
+{
+    vertical-align:middle;
+    font-size:1.2em;
+    font-family:'Malgun Gothic';
+    font-weight:bold;
+    color:#888888;
+    padding:15px 30px 15px 30px;
+}
+
+#table_gethomeboard_view .tr_title_tbody_sub td
+{
+    width:100%;
+    padding:0px 30px 0px 30px;
+}
+
+#table_gethomeboard_view .tr_title_tbody_sub div
+{
+    margin:0px 20px 0px 0px;
+}
+
+#table_gethomeboard_view .tr_content_tbody_sub_content td
+{
+    overflow:visible;
+    vertical-align:top;
+    padding:20px 30px 20px 30px;
+}
+
+#table_gethomeboard_view .tr_button_tbody_sub td
+{
+    height:20px;
+    vertical-align:middle;
+    background-color:#ecedea;
+    text-align:left;
+    padding:5px 20px 5px 20px;
+}
+
+#table_gethomeboard_view .tr_button_tbody_sub div
+{
+    margin:0px 0px 0px 10px;
+}
+
+/* reply */
+
+/* write */
+
+/* modify */
+
+/* delete */
+    
+
+/* list */
+
+#div_list_inform
+{
+    display: inline;
+    font-size: 11pt;
+    font-weight:bold;
+}
+
+#table_inform_list
+{
+    width:100%;
+}
+
+#table_inform_list th
+{
+    height:30px;
+    vertical-align:middle;
+    background-color:#ecedea;
+}
+
+#table_inform_list td
+{
+    height:20px;
+    vertical-align:middle;
+}
+
+#th_list_inform_num
+{
+    width:10%;
+}
+
+#th_list_inform_nick_name
+{
+    width:15%;
+}
+
+#th_list_inform_user_subject
+{
+    width:50%;
+}
+
+#th_list_inform_date_written
+{
+    width:15%;
+}
+
+#th_list_inform_visited
+{
+    width:10%;
+}
+
+#td_list_inform_num
+{
+    text-align:center;
+}
+
+#td_list_inform_nick_name
+{
+    text-align:center;
+    font-size:1.1em;
+}
+
+#td_list_inform_user_subject
+{
+    text-align:left;
+}
+
+#td_list_inform_date_written
+{
+    text-align:center;
+}
+
+#td_list_inform_visited
+{
+    text-align:right;
+}
+
+#tbody_inform_paging .td_paging_numeric_button
+{
+    text-align:center;
+    height:30px;
+    vertical-align:middle;
+    background-color:#ecedea;
+}
+
+/* view - main */
+
+#table_inform_view
+{
+    width:100%;
+}
+
+/* view - sub */
+
+#table_inform_view .tr_content_tbody_sub_subject td
+{
+    vertical-align:middle;
+    font-size:1.2em;
+    font-family:'Malgun Gothic';
+    font-weight:bold;
+    color:#888888;
+    padding:15px 30px 15px 30px;
+}
+
+#table_inform_view .tr_title_tbody_sub td
+{
+    width:100%;
+    padding:0px 30px 0px 30px;
+}
+
+#table_inform_view .tr_title_tbody_sub div
+{
+    margin:0px 20px 0px 0px;
+}
+
+#table_inform_view .tr_content_tbody_sub_content td
+{
+    overflow:visible;
+    vertical-align:top;
+    padding:20px 30px 20px 30px;
+}
+
+#table_inform_view .tr_button_tbody_sub td
+{
+    height:20px;
+    vertical-align:middle;
+    background-color:#ecedea;
+    text-align:left;
+    padding:5px 20px 5px 20px;
+}
+
+#table_inform_view .tr_button_tbody_sub div
+{
+    margin:0px 0px 0px 10px;
+}
+
+/* reply */
+
+/* write */
+
+/* modify */
+
+/* delete */
+    
+
+/*#div_right_events
+{
+    overflow:auto;
+    }
+
+#div_space_gap_upper_fieldset
+{
+    height:4px;
+}
+
+#div_right_events table td
+{
+    border-top-style: solid; 
+    border-top-width: 1px; 
+    border-top-color: #dedede
+}
+
+#div_right_events .th_div_rep_address,
+#div_right_events .th_div_critical_fault_string
+{
+    text-align:left;
+    }
+
+#div_right_events .div_right_events_th_hover
+{
+    cursor: pointer;
+    background-color: #98f665;
+    }
+
+#div_right_events .tbody_right_events_hover
+{
+    cursor: pointer;
+    background-color: #f0f0ef;
+    }
+
+#div_right_events .tbody_right_events_click_history_present_selected
+{
+    background-color: #c8fcdd;
+    }
+#div_right_events .tbody_right_events_click_history_previous_selected
+{
+    background-color: #f7fca8;
+}
+
+#div_right_events table th .th_div_dup_check_name,
+#div_right_events table td .td_div_dup_check_name
+{
+    text-align:left;
+    font-size:10pt;
+    color:#124c8d
+}
+
+#div_right_events table th .th_div_state_bid_result,
+#div_right_events table td .td_div_state_bid_result
+{
+    text-align:center;
+}
+
+#div_right_events table th .th_div_rep_usage,
+#div_right_events table td .td_div_rep_usage
+{
+    text-align:center;
+    font-weight:bold;
+    font-size:9pt;
+    color:#560503
+}     
+
+#div_right_events table th .th_div_appraisal_price,
+#div_right_events table td .td_div_appraisal_price,
+#div_right_events table th .th_div_lowest_bid_price,
+#div_right_events table td .td_div_lowest_bid_price
+{
+    text-align:right;
+}
+
+#div_right_events table td .td_div_lowest_bid_price
+{
+    text-align:right;
+    color:#a90905;
+    font-style:oblique;
+}
+
+#div_right_events table th .th_div_rep_address,
+#div_right_events table td .td_div_rep_address
+{
+    font-family:����ü;
+    font-size:9pt
+}  
+
+#div_right_events table th .th_div_critical_fault_string,
+#div_right_events table td .td_div_critical_fault_string
+{
+    color:#a90905;
+}*/  
+
+/*#div_right_timetable
+{
+    overflow:auto;
+    }
+
+#div_space_gap_upper_fieldset
+{
+    height:4px;
+}
+
+#div_right_timetable table td
+{
+    border-top-style: solid; 
+    border-top-width: 1px; 
+    border-top-color: #dedede
+}
+
+#div_right_timetable .th_div_rep_address,
+#div_right_timetable .th_div_critical_fault_string
+{
+    text-align:left;
+    }
+
+#div_right_timetable .div_right_timetable_th_hover
+{
+    cursor: pointer;
+    background-color: #98f665;
+    }
+
+#div_right_timetable .tbody_right_events_hover
+{
+    cursor: pointer;
+    background-color: #f0f0ef;
+    }
+
+#div_right_timetable .tbody_right_events_click_history_present_selected
+{
+    background-color: #c8fcdd;
+    }
+#div_right_timetable .tbody_right_events_click_history_previous_selected
+{
+    background-color: #f7fca8;
+}
+
+#div_right_timetable table th .th_div_dup_check_name,
+#div_right_timetable table td .td_div_dup_check_name
+{
+    text-align:left;
+    font-size:10pt;
+    color:#124c8d
+}
+
+#div_right_timetable table th .th_div_state_bid_result,
+#div_right_timetable table td .td_div_state_bid_result
+{
+    text-align:center;
+}
+
+#div_right_timetable table th .th_div_rep_usage,
+#div_right_timetable table td .td_div_rep_usage
+{
+    text-align:center;
+    font-weight:bold;
+    font-size:9pt;
+    color:#560503
+}     
+
+#div_right_timetable table th .th_div_appraisal_price,
+#div_right_timetable table td .td_div_appraisal_price,
+#div_right_timetable table th .th_div_lowest_bid_price,
+#div_right_timetable table td .td_div_lowest_bid_price
+{
+    text-align:right;
+}
+
+#div_right_timetable table td .td_div_lowest_bid_price
+{
+    text-align:right;
+    color:#a90905;
+    font-style:oblique;
+    font-weight:bold;
+}
+
+#div_right_timetable table th .th_div_rep_address,
+#div_right_timetable table td .td_div_rep_address
+{
+    font-family:����ü;
+    font-size:9pt
+}  
+
+#div_right_timetable table th .th_div_critical_fault_string,
+#div_right_timetable table td .td_div_critical_fault_string
+{
+    color:#a90905;
+}*/  
+    
+    
+
+#table_general_list_paging, #table_general_list_paging_inner
+{
+    width: 100%;
+    }
+
+#table_general_list_paging .td_paging_numeric_button
+{
+    text-align:center;
+    height:30px;
+    vertical-align:middle;
+    background-color:#ecedea;
+}
+
+#table_general_list_paging_inner .td_general_list_paging_inner_main_number
+{
+    width:8%;
+    }
+
+#table_general_list_paging_inner .td_paging_moving_button
+{
+    width:5%;
+    }
+
+#table_region_list_paging, #table_region_list_paging_inner
+{
+    width: 100%;
+    }
+
+#table_region_list_paging .td_paging_numeric_button
+{
+    text-align:center;
+    height:30px;
+    vertical-align:middle;
+    background-color:#ecedea;
+}
+
+#table_region_list_paging_inner .td_region_list_paging_inner_main_number
+{
+    width:8%;
+    }
+
+#table_region_list_paging_inner .td_paging_moving_button
+{
+    width:5%;
+    }
+
+#login_fieldset
+{
+}
+
+#membership_fieldset
+{
+}
+
+#table_intro_box_inner_middle_individual_search td {
+    text-align: center;
+}
+
+.div_tagyeng_general {
+    font-weight:bold;
+    font-size:16px;
+    color:white;
+}
+
+.content_general { /*�̰��� sentence ���� ���忡 ���� ���̴�.*/    
+    font-size:14px;
+    text-align:left;
+}
+
+.th_div_rep_address 
+{
+
+}
+
+.th_div_rep_usage, 
+.th_div_proceeding_state
+{
+    text-align:center;
+}
+
+.th_div_appraisal_price,
+.th_div_lowest_bid_price,
+.th_div_critical_fault_string,
+.td_div_appraisal_price
+{
+    text-align:right;
+}
+
+.td_div_lowest_bid_price
+{
+    text-align:right;
+    color:#a90905;
+    font-style:oblique;
+    font-weight:bold;
+}
+
+.td_div_critical_fault_string
+{
+    text-align:right;
+    color:#a90905;
+    font-style:oblique;
+    font-weight:bold;
+}
+
+.td_div_dup_check_name
+{
+    font-weight:bold;
+}
+
+/*#div_tarif*/
+
+#div_tarif{
+    padding:3%;
+}
+
+#div_tarif .tarif_title_main
+{
+    padding-top:50px;
+    padding-bottom:30px;
+    text-align:center;
+    font-size:30px;
+    font-family:'Malgun Gothic';
+}
+
+#div_tarif .tarif_title_sub
+{
+    padding-right:50px;
+    padding-bottom:15px;
+    text-align:right;
+    font-size:12px;
+    font-family:'Malgun Gothic';
+}
+
+#div_tarif .tarif_table
+{
+    padding:20px;
+}
+
+#div_tarif .tarif_tr_title
+{
+    text-align:center;
+    height:40px;
+    font-size:18px;
+    font-family:'Malgun Gothic';
+}
+
+#div_tarif .tarif_tr_content
+{
+    height:30px;
+}
+
+#div_tarif .tarif_td_region_main
+{
+    text-align:center;
+    width:120px;
+    font-size:16px;
+    font-family:'Malgun Gothic';
+}
+
+#div_tarif .tarif_td_region_sub
+{
+    text-align:center;
+    width:300px;
+    font-size:14px;
+    font-family:'Malgun Gothic';
+}
+
+#div_tarif .tarif_td_price
+{
+    text-align:center;
+    width:80px;
+    font-size:12px;
+    font-family:'Malgun Gothic';
+}
+
+#div_tarif .tarif_background_color
+{
+    background-color:#e1e0e0;
+}
+
+#div_tarif .tarif_td_border_bottom_line
+{
+    border-bottom:solid;
+    border-bottom-width:5px;
+    border-bottom-color:#e1e0e0;
+}
+
+/*#div_top_banner_box .btn_branch{
+
+}*/
+
+/*sample*/
+
+.td_btn_sample_for_unpaid_general{
+    
+    text-align:center;
+    border:solid;
+    border-width:1px;
+    border-color:#cccccc;
+    background-color:#eeeeee;
+
+}
+
+.td_btn_sample_for_unpaid_general_selected{
+    
+    background-color:#b6ff00;
+
+}
+
+.div_caution_sample{
+
+    font-size:15px;
+
+}
+
+.div_advertizement{
+    color: rgb(254, 0, 0);
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    font-family:'Malgun Gothic';
+}
+
+#table_sub_menu_button{
+    display:none;
+}

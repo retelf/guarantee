@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="../../../../GRT/wv_import/jquery.js" type="text/javascript"></script>
+    <link href="../../../../GRT/wv_import/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
+    <script src="../../../../GRT/wv_import/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="../../../../GRT/wv_import/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <link href="../../../../GRT/wv_import/bootstrap/bootstrap.min.css" rel="stylesheet" type='text/css'>
+    <link href="../../../../GRT/wv_import/my_css/style_sheet.css" rel="stylesheet" type='text/css'>
+    <link href="../../../../GRT/wv_import/my_css/lds-spinner.css" rel="stylesheet" type='text/css'>
+
+    <link href="../css/default.css" rel="stylesheet" />
+    <script src="../js/transfer.js" type="text/javascript"></script>
+    <script src="../js/register_events.js" type="text/javascript"></script>
+    <script src="../js/dynamic_generate_select_element.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            c_register_events.exe();
+
+            let jsonObject = {
+                key: "initialize_transfer_form",
+                value:
+                {
+                }
+            }
+            window.chrome.webview.postMessage(jsonObject);
+        });
+    </script>
+
+</head>
+
+<body>
+    <table id="main_table">
+        <tr>
+            <td class="td_main td_data_textarea">
+                <div class="main_div main_div_left">
+                    <div class="container">
+                        <div class="row">
+                            <!--<div class="col-md-3">
+        <label for="div_coin_name">coin_name:</label>
+        <div id="div_coin_name"></div>
+    </div>-->
+                            <div class="col-md-3">
+                                <div id="div_self_coin_name">TRANSFER : </div>
+                                <select id="select_self_coin_name">
+                                    <option value="guarantee" selected>guarantee</option>
+                                    <option value="ethereum">ethereum</option>
+                                    <option value="bitcoin">BTC(비트코인)</option>
+                                    <option value="doge">DOGE(도지코인)</option>
+                                    <option value="klayton">KLAY(클레이튼)</option>
+                                    <option value="eos">EOS(이오스)</option>
+                                    <option value="ripple">XRP(리플)</option>
+                                    <option value="KRW">KRW(원)</option>
+                                    <option value="USD">USD(달러)</option>
+                                    <option value="CNY">CNY(위안)</option>
+                                    <option value="EUR">EUR(유로)</option>
+                                    <option value="JPY">JPY(엔)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="div_balance">balance:</label>
+                                <div id="div_balance"></div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="div_from">from:</label>
+                                <div id="div_from"></div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="text_to">to:</label>
+                                <input id="text_to" type="text" />
+                            </div>
+                            <div class="col-md-3">
+                                <label for="text_amount" id="label_transfer_amount_former">amount:</label>
+                                <input id="text_amount" type="text" />
+                                <label id="label_amount_unit" for="text_amount"></label>
+                            </div>
+                            <div id="div_gasPrice_outer" class="col-md-3">
+                                <label for="text_gasPrice">gasPrice:</label>
+                                <input id="text_gasPrice" type="text" />
+                                <label for="text_gasPrice"> unit : Gwei</label>
+                            </div>
+                            <div class="col-md-3">
+                                <br />
+                                <div id="div_details"></div>
+                            </div>
+                            <div class="col-md-3 div_button_case">
+                                <br />
+                                <button id="btn_transfer" type="button" class="btn btn-primary btn-sm">transfer</button>
+                                <br /><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="td_main td_explanation">
+                <div class="main_div main_div_right">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div id="div_subject" class="div_subject">제목</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div id="div_explanation" class="div_content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

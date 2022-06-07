@@ -1,0 +1,42 @@
+﻿#div_main{
+    width:100%;
+}
+#div_gasPrice_outer {
+    display: none;
+}
+
+#textarea_code {
+    width: 300px;
+    height: 400px;
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow-x: scroll;
+}
+.mobile_authentication,
+
+.keys {
+    display: none;
+}
+.main_div {
+    /*display:inline-grid;*/
+}
+.main_div_left {
+    background-color:aqua;
+}
+.main_div_right {
+    background-color: bisque;
+}
+
+.td_main {
+    vertical-align: top;
+}
+
+.div_subject{
+    text-align:center;
+}
+.div_button_case {
+    text-align: center;
+}
+.hidden{
+    display:none;
+}

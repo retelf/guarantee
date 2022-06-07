@@ -1,0 +1,103 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>guarantee7_smart_contract</RootNamespace>
+    <StartupObject>guarantee7_smart_contract.smart_contract</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn />
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn />
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="wv\css\coding.css" />
+    <None Remove="wv\js\register_coding\deploy.js" />
+    <None Remove="wv\js\register_coding\register_events.js" />
+    <None Remove="wv\js\register_coding\walletwallet_source.js" />
+    <None Remove="wv\market\css\coding.css" />
+    <None Remove="wv\market\css\wallet\coding.css" />
+    <None Remove="wv\market\etc\mysql_query.txt" />
+    <None Remove="wv\market\js\deploy\deploy.js" />
+    <None Remove="wv\market\js\deploy\register_events.js" />
+    <None Remove="wv\market\js\wallet\ethereum_supplier.js" />
+    <None Remove="wv\market\js\wallet\GR.js" />
+    <None Remove="wv\market\js\wallet\guarantee_supplier.js" />
+    <None Remove="wv\market\js\wallet\register_events.js" />
+    <None Remove="wv\multilevel_pension_contract\css\coding.css" />
+    <None Remove="wv\multilevel_pension_contract\css\wallet\coding.css" />
+    <None Remove="wv\multilevel_pension_contract\etc\mysql_query.txt" />
+    <None Remove="wv\multilevel_pension_contract\js\wallet\ethereum_supplier.js" />
+    <None Remove="wv\multilevel_pension_contract\js\wallet\guarantee_supplier.js" />
+    <None Remove="wv\multilevel_pension_contract\js\wallet\register_events.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wv\css\coding.css" />
+    <Content Include="wv\js\register_coding\register_events.js" />
+    <Content Include="wv\js\register_coding\deploy.js" />
+    <Content Include="wv\market\css\coding.css" />
+    <Content Include="wv\market\css\wallet\coding.css" />
+    <Content Include="wv\market\etc\mysql_query.txt" />
+    <Content Include="wv\market\js\deploy\deploy.js" />
+    <Content Include="wv\market\js\deploy\register_events.js" />
+    <Content Include="wv\market\js\wallet\ethereum_supplier.js" />
+    <Content Include="wv\market\js\wallet\guarantee_supplier.js" />
+    <Content Include="wv\market\js\wallet\GR.js" />
+    <Content Include="wv\market\js\wallet\register_events.js" />
+    <Content Include="wv\multilevel_pension_contract\css\coding.css" />
+    <Content Include="wv\multilevel_pension_contract\css\wallet\coding.css" />
+    <Content Include="wv\multilevel_pension_contract\etc\mysql_query.txt" />
+    <Content Include="wv\multilevel_pension_contract\js\wallet\ethereum_supplier.js" />
+    <Content Include="wv\multilevel_pension_contract\js\wallet\guarantee_supplier.js" />
+    <Content Include="wv\multilevel_pension_contract\js\deploy\deploy.js" />
+    <Content Include="wv\multilevel_pension_contract\js\deploy\register_events.js" />
+    <Content Include="wv\multilevel_pension_contract\js\wallet\register_events.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="Nethereum.Web3" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.web.webview2" Version="1.0.961.33" />
+    <PackageReference Include="MySqlConnector" Version="1.3.13" />
+    <PackageReference Include="Nethereum.Web3" Version="4.0.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GRT\GRT.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

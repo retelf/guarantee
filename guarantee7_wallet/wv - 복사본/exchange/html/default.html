@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="../../../../GRT/wv_import/jquery.js" type="text/javascript"></script>
+    <link href="../../../../GRT/wv_import/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
+    <script src="../../../../GRT/wv_import/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="../../../../GRT/wv_import/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <link href="../../../../GRT/wv_import/bootstrap/bootstrap.min.css" rel="stylesheet" type='text/css'>
+    <link href="../../../../GRT/wv_import/my_css/style_sheet.css" rel="stylesheet" type='text/css'>
+    <link href="../../../../GRT/wv_import/my_css/lds-spinner.css" rel="stylesheet" type='text/css'>
+
+    <link href="../css/default.css" rel="stylesheet" />
+    <script src="../js/ethereum_supplier.js"></script>
+    <script src="../js/guarantee_supplier.js"></script>
+    <script src="../js/register_events.js"></script>
+    <script src="../../general/float_fix.js"></script>
+    <script src="../../general/GR.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            c_register_events.exe();
+
+            let jsonObject = {
+                key: "initialize_exchange_form",
+                value:
+                {
+                }
+            }
+            window.chrome.webview.postMessage(jsonObject);
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <table id="main_table">
+        <tr>
+            <td class="td_main td_data_textarea">
+                <div class="main_div main_div_left">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div id="div_coin_name">coin_name</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div id="div_self_coin_name">SELL : </div>
+                                <select id="select_self_coin_name">
+                                    <option value="guarantee">guarantee</option>
+                                    <option value="ethereum">ethereum</option>
+                                    <option value="bitcoin">BTC(비트코인)</option>
+                                    <option value="doge">DOGE(도지코인)</option>
+                                    <option value="klayton">KLAY(클레이튼)</option>
+                                    <option value="eos">EOS(이오스)</option>
+                                    <option value="ripple">XRP(리플)</option>
+                                    <option value="KRW">KRW(원)</option>
+                                    <option value="USD">USD(달러)</option>
+                                    <option value="CNY">CNY(위안)</option>
+                                    <option value="EUR">EUR(유로)</option>
+                                    <option value="JPY">JPY(엔)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <div id="div_counterpart_coin_name">BUY : </div>
+                                <select id="select_counterpart_coin_name">
+                                    <option value="guarantee">guarantee</option>
+                                    <option value="ethereum">ethereum</option>
+                                    <option value="bitcoin">BTC(비트코인)</option>
+                                    <option value="doge">DOGE(도지코인)</option>
+                                    <option value="klayton">KLAY(클레이튼)</option>
+                                    <option value="eos">EOS(이오스)</option>
+                                    <option value="ripple">XRP(리플)</option>
+                                    <option value="KRW">KRW(원)</option>
+                                    <option value="USD">USD(달러)</option>
+                                    <option value="CNY">CNY(위안)</option>
+                                    <option value="EUR">EUR(유로)</option>
+                                    <option value="JPY">JPY(엔)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <div id="div_eoa">eoa</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div id="div_balance">balance</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div id="div_sell_amount">amount you want to sell : </div>
+                                <input id="text_sell_amount" type="text" value="" /> <label id="label_sell_amount" for="text_sell_amount">unit</label>
+                            </div>
+                            <div id="div_gasPrice_outer" class="col-md-3">
+                                <label for="text_gasPrice">gasPrice:</label>
+                                <input id="text_gasPrice" type="text" />
+                                <label for="text_gasPrice"> unit : Gwei</label>
+                            </div>
+                            <div id="div_gasLimit_outer" class="col-md-3">
+                                <label for="text_gasLimit">gasLimit:</label>
+                                <input id="text_gasLimit" type="text" value="21000"/>
+                                <label for="text_gasLimit"> unit : Gwei</label>
+                            </div>
+                            <div class="col-md-3">
+                                <div id="div_exchange_rate">exchange rate : </div>
+                                <label id="label_sell_amount_former" for="text_exchange_rate">exchange_rate_phrase</label> <input id="text_exchange_rate" type="text" value="" /> <label id="label_sell_amount_latter" for="text_exchange_rate">exchange_rate_phrase</label>
+                            </div>
+                            <div class="col-md-3 div_button_case">
+                                <br />
+                                <input id="btn_contract" type="button" value="LOAD ORDER">
+                                <br /><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="td_main td_explanation">
+                <div class="main_div main_div_right">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div id="div_subject" class="div_subject">제목</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div id="div_explanation" class="div_content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
